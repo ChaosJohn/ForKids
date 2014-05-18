@@ -5,5 +5,7 @@ ForKids
 http://www.jiayuanbao.com.cn/
 无锡怀聚信息科技有限公司
 
+需要导入“友盟sdk”
+
 =================
 Chaos John
