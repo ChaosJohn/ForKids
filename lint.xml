@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="SdCardPath">
+        <ignore path="src/com/huaijv/forkids/utils/DownLoadAvatarWithCache.java" />
+        <ignore path="src/com/huaijv/forkids/utils/DownLoadImageWithCache.java" />
+    </issue>
+</lint>

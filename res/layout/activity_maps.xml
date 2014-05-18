@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEAE6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#2FBAE8"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" >
+
+            <Button
+                android:id="@+id/navigation_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/navigation_btn" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:src="@drawable/tips_logo" />
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4" >
+
+            <com.huaijv.forkids.view.MyLocationMapView
+                android:id="@+id/bmapView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true" />
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_marginTop="80dip" -->
+            <!-- android:background="#D000" -->
+            <!-- android:minWidth="100dip" -->
+            <!-- android:orientation="vertical" -->
+            <!-- android:padding="2dp" > -->
+
+
+            <!-- <RadioGroup -->
+            <!-- android:id="@+id/radioGroup" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:contentDescription="定位icon" > -->
+
+
+            <!-- <RadioButton -->
+            <!-- android:id="@+id/defaulticon" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:checked="true" -->
+            <!-- android:text="默认图标" > -->
+            <!-- </RadioButton> -->
+
+
+            <!-- <RadioButton -->
+            <!-- android:id="@+id/customicon" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="自定义图标" > -->
+            <!-- </RadioButton> -->
+            <!-- </RadioGroup> -->
+            <!-- </LinearLayout> -->
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/button_style"
+                android:text="定位"
+                android:textColor="#FF000000" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="#F5AC4E" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="您的宝宝离站点还有     3 km\n预计   4 分钟后到达\n请按时到达接送     15：45"
+                android:textSize="16sp"
+                android:textColor="@color/bottom_long" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

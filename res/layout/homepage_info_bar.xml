@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#434343"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="#BF5D76"
+        android:gravity="center"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/avatar_sample" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/kid_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="程灵素"
+                android:textColor="#CCCCCC"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4"
+            android:gravity="center_vertical" 
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weather_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="晴 "
+                android:textColor="#CCCCCC"
+                android:textSize="12sp" />
+<!--             <TextView -->
+<!--                 android:id="@+id/temp1" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:gravity="bottom" -->
+<!--                 android:text="0'C" -->
+<!--                 android:textColor="#CCCCCC" -->
+<!--                 android:textSize="16sp" /> -->
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:gravity="bottom" -->
+<!--                 android:text="-" -->
+<!--                 android:textColor="#CCCCCC" -->
+<!--                 android:textSize="16sp" /> -->
+<!--             <TextView -->
+<!--                 android:id="@+id/temp2" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:gravity="bottom" -->
+<!--                 android:text="10'C" -->
+<!--                 android:textColor="#CCCCCC" -->
+<!--                 android:textSize="16sp" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

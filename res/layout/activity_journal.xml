@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEAE6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#2FBAE8"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" >
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/back_btn" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="9"
+            android:padding="4dp"
+            android:src="@drawable/myclass_logo" />
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/item_split_gray_background"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/journal_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="喜迎新春"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+            
+            <LinearLayout 
+                android:id="@+id/content_layout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:paddingBottom="4dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="4dp"
+                android:orientation="vertical"></LinearLayout>
+
+<!--             <TextView -->
+<!--                 android:id="@+id/journal_detail_content" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:paddingBottom="4dp" -->
+<!--                 android:paddingLeft="20dp" -->
+<!--                 android:paddingRight="20dp" -->
+<!--                 android:paddingTop="4dp" -->
+<!--                 android:text="哈哈哈" -->
+<!--                 android:textColor="#000000" -->
+<!--                 android:textSize="16sp" /> -->
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/like_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tips_detail_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/like_btn"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/like_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:text="125"
+                android:textColor="#FFFBF9"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comment_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tips_detail_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/comment_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/comment_btn"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                
+                android:gravity="center"
+                android:text="23"
+                android:textColor="#FFFBF9"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tips_detail_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/journal_share_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:background="@drawable/share_btn"
+                android:clickable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFBF9"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

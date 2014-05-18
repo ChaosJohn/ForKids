@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE9E5"
+    android:orientation="vertical"
+    tools:context=".WeeklyRecipe" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#2FB9E7"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" >
+
+            <Button
+                android:id="@+id/navigation_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/navigation_btn" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:layout_weight="9"
+            android:src="@drawable/homepage_logo" />
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.huaijv.forkids.viewElems.MyScrollView
+        android:id="@+id/homepage_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/school_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/school_background" >
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/homepage_float_info_bar"
+                    layout="@layout/homepage_info_bar" />
+
+                <!-- <ListView -->
+                <!-- android:id="@+id/homepage_listview" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_margin="10dp" -->
+                <!-- android:cacheColorHint="#00000000" -->
+                <!-- android:divider="@null" -->
+                <!-- android:dividerHeight="18dp" -->
+                <!-- android:listSelector="@android:color/transparent" -->
+                <!-- android:scrollbars="none" > -->
+                <!-- </ListView> -->
+
+                <LinearLayout
+                    android:id="@+id/homepage_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/homepage_top_info_bar"
+                layout="@layout/homepage_info_bar" />
+        </FrameLayout>
+    </com.huaijv.forkids.viewElems.MyScrollView>
+
+</LinearLayout>

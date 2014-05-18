@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEAE6"
+    android:orientation="vertical"
+    tools:context=".WeeklyRecipe" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#2FBAE8"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" >
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/back_btn" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:padding="4dp"
+            android:src="@drawable/moments_logo" />
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/moments_detail_imageview" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="0dip" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:layout_weight="4" -->
+    <!-- android:src="@drawable/main_background" > -->
+    <!-- </ImageView> -->
+
+
+    <!-- <android.support.v4.view.ViewPager -->
+    <!-- android:id="@+id/moments_detail_imageview" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="0dip" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:layout_weight="4" > -->
+    <!-- </android.support.v4.view.ViewPager> -->
+
+    <ViewFlipper
+        android:id="@+id/moments_detail_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="7" >
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#81000000"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp" >
+
+        <TextView
+            android:id="@+id/moments_detail_desc"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="植树节"
+            android:textColor="#CDCDCD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/moments_detail_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="2013,03,12"
+            android:textColor="#CDCDCD"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_detail_toolbar_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/moments_detail_btn_background_selector1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/like_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/like_btn" />
+
+            <TextView
+                android:id="@+id/like_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="125"
+                android:textColor="#FFFBF9"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/moments_details_btn_background_selector2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/comment_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/comment_btn" />
+
+            <TextView
+                android:id="@+id/comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:text="23"
+                android:textColor="#FFFBF9"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tips_detail_btn_selector"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/download_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:textColor="#FFFBF9"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/moments_detail_btn_background_selector1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/share_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/share_btn" />
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:textColor="#FFFBF9"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

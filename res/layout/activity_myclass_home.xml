@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEAE6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#2FBAE8"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" >
+
+            <Button
+                android:id="@+id/navigation_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/navigation_btn" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="9"
+            android:padding="4dp"
+            android:src="@drawable/myclass_logo" />
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:text="教学计划"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/myclass_week_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/weekly_recipe_spinner_background"
+                android:padding="4dp" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <ScrollView -->
+        <!-- android:id="@+id/myclass_scrollview_parent" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="0dip" -->
+        <!-- android:layout_marginLeft="10dp" -->
+        <!-- android:layout_marginRight="10dp" -->
+        <!-- android:layout_weight="4" -->
+        <!-- android:scrollbars="none" > -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:orientation="vertical" > -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/message_listview_item_type_text"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="#2FBAE8"
+                    android:gravity="center"
+                    android:text="教学重点"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/plan_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/plan_mon"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="周一"
+                            android:textSize="16sp"
+                            android:textColor="#98B8C9" />
+
+                        <TextView
+                            android:id="@+id/plan_tue"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="周二"
+                            android:textSize="16sp"
+                            android:textColor="#98B8C9" />
+
+                        <TextView
+                            android:id="@+id/plan_wen"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="周三"
+                            android:textSize="16sp"
+                            android:textColor="#98B8C9" />
+
+                        <TextView
+                            android:id="@+id/plan_the"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="周四"
+                            android:textSize="16sp"
+                            android:textColor="#98B8C9" />
+
+                        <TextView
+                            android:id="@+id/plan_fri"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="周五"
+                            android:textSize="16sp"
+                            android:textColor="#98B8C9" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/bottom_long"
+                        android:paddingBottom="3dip" >
+
+                        <ImageView
+                            android:id="@+id/iv_bottom_line"
+                            android:layout_width="60dp"
+                            android:layout_height="5dp"
+                            android:scaleType="matrix"
+                            android:src="@color/bottom_short" />
+                    </RelativeLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:flipInterval="30"
+                        android:persistentDrawingCache="animation" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

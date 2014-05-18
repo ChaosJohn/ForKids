@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">家园宝</string>
+    <string name="title_activity_weekly_recipe">WeeklyRecipe</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_moments">Moments</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_moments_gallery">MomentsGallery</string>
+    <string name="title_activity_moments_detail">MomentsDetail</string>
+    <string name="title_activity_homepage">Homepage</string>
+    <string name="title_activity_comment">Comment</string>
+    <string name="title_activity_login">Login</string>
+    <string name="about_us">\t\t上海怀聚信息技术有限公司于2009年在上海注册成立，并在无锡设有产品研发子公司。
+公司秉承“诚信、专业、务实、共赢”的理念，为客户提供全方位的服务：专业的SAP实施咨询，企业移动解决方案及产品，企业云计算解决方案及产品，SAP第三方应用解决方案及产品，企业IT系统维护及开发服务，IT高端培训服务。</string>
+    <string name="company_website">\t\t公司网址：。。。。。。</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+</resources>
